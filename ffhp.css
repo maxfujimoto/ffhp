@@ -1,0 +1,81 @@
+:root {
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(180deg, #2E2E31 25%, black);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: ; */
+    /* background-repeat: no-repeat; */
+    /* background-attatchment: fixed; */
+    /* background-size:cover; */
+}
+
+/* * { */
+/*     box-sizing: border-box; */
+/* } */
+
+.main {
+    background-color:;
+    height: calc(100% - 3vw);
+    width: calc(100% - 3vw);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+    border: 1px solid white;
+}
+
+tr, td {
+    padding: 0.5vw;
+}
+a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: sans-serif; 
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
