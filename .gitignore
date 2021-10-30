@@ -1,2 +1,4 @@
-#pesky autosave files
+# Pesky autosave files
 *~
+# Backups
+*.bak
