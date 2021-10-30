@@ -1,0 +1,57 @@
+#+title: FFHP Plan
+
+* SRS
+
+** Frontend
+
+*** Efficient
+
+*** Attractive
+
+** Backend
+
+*** Fast
+    - fast enough to run on every reload or in background every 10 minutes
+
+      
+* Breakdown
+
+** Frontend 
+
+*** Display Words
+    - Display words in an html file
+
+** Backend
+
+*** JavaScript
+
+**** Get Catalog HTML
+     - Node-fetch or puppeteer
+     - Requires user agent spoofing or puppeteer to get all data
+
+**** Parse Thread URLs
+     - Cheerio
+
+**** Get Thread HTML
+     - Iterate though thread urls with fetch.
+
+**** Parse Tread Content
+     - Cheerio
+
+**** Count words
+
+***** Option 1
+      - Itterate though words filling hash map with key:word value:occurances.
+      - Discard filter words
+
+***** Option 2 possibly faster
+
+****** Retard Verion
+       - Iterate though first 2 letters of every word filling hash map with key:wholeWord value:occurances
+       - Discard rows after threshold value (after 10 for display top 10)
+       - Iterace though next letter checking for matches and assign to new hashmap with key:wholeWord value:occurances
+       - Discard rows after threshold value
+       - Repeat assigning complete words to new hashmap
+
+****** Itterable Version
+       - Function that checks letter n+1
